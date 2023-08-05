@@ -12,8 +12,13 @@ ProductTag.init(
       primaryKey: true,
       autoIncrement: true
     },
-    tag_name: {
-      type: DataTypes.string
+    product_id: {
+      type: DataTypes.INTEGER
+      // foreign key?
+    },
+    tag_id: {
+      type: DataTypes.INTEGER,
+      // foreign key?
     },
   },
   {
