@@ -7,6 +7,7 @@ class ProductTag extends Model {}
 ProductTag.init(
   {
     // define columns
+    // joelg you know this activity 3
   },
   {
     sequelize,

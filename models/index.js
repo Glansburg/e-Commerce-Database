@@ -5,6 +5,7 @@ const Tag = require('./Tag');
 const ProductTag = require('./ProductTag');
 
 // Products belongsTo Category
+// referernce activity 21 for all these::: joelg
 
 // Categories have many Products
 

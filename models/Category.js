@@ -7,6 +7,7 @@ class Category extends Model {}
 Category.init(
   {
     // define columns
+    // examples id, title, author,   etc joelg activity 3
   },
   {
     sequelize,

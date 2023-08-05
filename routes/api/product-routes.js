@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Product, Category, Tag, ProductTag } = require('../../models');
 
 // The `/api/products` endpoint
-
+// reference activities 11 and 12. may need to search online. joelg
 // get all products
 router.get('/', (req, res) => {
   // find all products

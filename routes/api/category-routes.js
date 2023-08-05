@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
-
+//refererence actibity 11, 12 for these may need to look up restful routes
 router.get('/', (req, res) => {
   // find all categories
   // be sure to include its associated Products
