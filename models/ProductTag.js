@@ -6,8 +6,15 @@ class ProductTag extends Model {}
 
 ProductTag.init(
   {
-    // define columns
-    // joelg you know this activity 3
+    id: {
+      type: DataTypes.INTEGER,
+      notNull: true,
+      primaryKey: true,
+      autoIncrement: true
+    },
+    tag_name: {
+      type: DataTypes.string
+    },
   },
   {
     sequelize,
