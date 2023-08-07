@@ -21,7 +21,8 @@ Through this project I learned:
 N/A
 
 ## Usage
-To view video of route traffic with insomnia watch this video:
+To view video of route traffic with insomnia watch this video: [Untitled_ Aug 7 2023 5_50 PM.webm](https://github.com/Glansburg/e-Commerce-Database/assets/117139285/8144f464-71bd-491a-b5eb-6903a42126c1)
+
 
 
 
