@@ -18,20 +18,20 @@ router.get('/', (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
   // Is this right? -joelG
-  // use an include statement
+ 
 });
 
 // get one product
 router.get('/:id', (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
-  Product.findById().then (Product =>
+  Product.findByPk(req.params.id, {include: [Category, {model: Tag, through: ProductTag}],}).then (Product =>
     {
-      res.json(Product.category_id, ProductTag.tag_id)
-      .catch((err) => {
-        console.log(err);
-        res.status(400).json(err);
-    });
+      res.json(Product)
+})
+.catch((err) => {
+  console.log(err);
+  res.status(400).json(err);
 });
 });
 
