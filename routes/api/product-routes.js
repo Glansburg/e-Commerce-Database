@@ -1,21 +1,24 @@
 const router = require('express').Router();
 const { Product, Category, Tag, ProductTag } = require('../../models');
-
 // The `/api/products` endpoint
 // reference activities 11 and 12. may need to search online. joelg
 // get all products
 router.get('/', (req, res) => {
-  Product.findAll().then(Product =>
-    {
-      res.json(Product.category_id, ProductTag.tag_id)
-      .catch((err) => {
-        console.log(err);
-        res.status(400).json(err);
-      });
+  Product.findAll({include: [Category, {model: Tag, through: ProductTag}],}).then(product =>
+    { 
+      
+      res.json(product)
+     
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(400).json(err);
     });
+
   // find all products
   // be sure to include its associated Category and Tag data
   // Is this right? -joelG
+  // use an include statement
 });
 
 // get one product

@@ -1,25 +1,54 @@
-const { Model, DataTypes } = require('sequelize');
+// const { Model, DataTypes } = require('sequelize');
 
+// consct sequelize = require('../config/connection.js');
+
+// class Category extends Model {}
+
+// Category.init(
+//   { 
+//     id: {
+//       type: DataTypes.INTEGER,
+//       allowNull: false,
+//       primaryKey: true,
+//       autoIncrement: true,
+//     },
+//   },
+//   {
+//     category_name: {
+//       type: DataTypes.STRING,
+//       allowNull: false,
+//     },
+//   },
+
+//   {
+//     sequelize,
+//     timestamps: false,
+//     freezeTableName: true,
+//     underscored: true,
+//     modelName: 'category',
+//   }
+// );
+
+// module.exports = Category;
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection.js');
 
 class Category extends Model {}
 
 Category.init(
-  { 
+  {
     id: {
       type: DataTypes.INTEGER,
-      notNull: true,
+      allowNull: false,
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true,
     },
-  },
-  {
+    // Move the category_name attribute inside the same object
     category_name: {
       type: DataTypes.STRING,
-      notNull: true,
+      allowNull: false,
     },
   },
-
   {
     sequelize,
     timestamps: false,

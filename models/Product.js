@@ -12,22 +12,22 @@ Product.init(
   {
     id: {
       type: DataTypes.INTEGER,
-      notNull: true,
+      allowNull: false,
       primaryKey: true,
       autoIncrement: true
     },
     product_name: {
       type: DataTypes.STRING,
-      notNull: true
+      allowNull: false,
     },
     price: {
       type:DataTypes.DECIMAL,
-      notNull: true,
+      allowNull: false,
       isDecimal: true
     },
     stock: {
       type: DataTypes.INTEGER,
-      notNull: true,
+      allowNull: false,
       min: 10, //is this right?
       isnumeric: true
     },
@@ -49,3 +49,4 @@ Product.init(
 );
 
 module.exports = Product;
+
