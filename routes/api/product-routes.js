@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
 
   // find all products
   // be sure to include its associated Category and Tag data
-  // Is this right? -joelG
+
  
 });
 
@@ -25,9 +25,9 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
-  Product.findByPk(req.params.id, {include: [Category, {model: Tag, through: ProductTag}],}).then (Product =>
+  Product.findByPk(req.params.id, {include: [Category, {model: Tag, through: ProductTag}],}).then (product =>
     {
-      res.json(Product)
+      res.json(product)
 })
 .catch((err) => {
   console.log(err);
