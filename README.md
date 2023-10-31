@@ -12,10 +12,8 @@ Through this project I learned:
 * How to use chat GPT to solve one of my issues I couldnt figure out.
 * How to use documentation to help me with syntax.
   
-## Being new to web development I came across some issues you may see obvious such as:
-* It took me like four hours to figure out i had an extra comma making sequelize not run... 
+## Being new to web development I came across some issues you may see obvious such as: 
 * The routing system was difficult for me.
-* Running out of time to complete the challenge.
   
  ## Instalation
 N/A
