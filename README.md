@@ -8,7 +8,6 @@ Through this project I learned:
 * Better how to use the routing system.
 * How to work with models.
 * How to use Insomnia to get routing information.
-* That time invested was time well spent and I learned more. The only problem was I was not able to complete the challenge in the amount of time I was given.
 * How to use chat GPT to solve one of my issues I couldnt figure out.
 * How to use documentation to help me with syntax.
   
