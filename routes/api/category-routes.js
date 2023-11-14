@@ -45,7 +45,7 @@ router.put("/:id", (req, res) => {
     where: { id: req.params.id },
   })
     .then((udatedCategory) => {
-      if (!updatedCategory) {
+      if (!udatedCategory) {
         res
           .status(404)
           .json({ message: "No category found with this unique id" });
