@@ -12,7 +12,7 @@ Through this project I learned:
 * How to use documentation to help me with syntax.
   
 ## Being new to web development I came across some issues you may see obvious such as: 
-* The routing system was difficult for me.
+* The routing system was difficult for me.  With extra time I was able to complete it all.
   
  ## Instalation
 N/A
